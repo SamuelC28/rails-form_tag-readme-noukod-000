@@ -791,3 +791,72 @@ Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f5
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 190.102.85.251 at 2019-01-18 15:16:01 +0000
+
+
+Started GET "/posts/new?post%5Btitle%5D=aaaa&post%5Bdescription%5D=qqqqq" for 190.102.85.251 at 2019-01-18 15:30:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"aaaa", "description"=>"qqqqq"}}
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 236ms (Views: 226.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=aaaa&post%5Bdescription%5D=qqqqq" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"aaaa", "description"=>"qqqqq"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:38 +0000
+
+
+Started GET "/posts?post%5Btitle%5D=4444&post%5Bdescription%5D=555555" for 190.102.85.251 at 2019-01-18 15:30:45 +0000
+Processing by PostsController#index as HTML
+  Parameters: {"post"=>{"title"=>"4444", "description"=>"555555"}}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts?post%5Btitle%5D=4444&post%5Bdescription%5D=555555" for 190.102.85.251 at 2019-01-18 15:30:55 +0000
+Processing by PostsController#index as HTML
+  Parameters: {"post"=>{"title"=>"4444", "description"=>"555555"}}
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 190.102.85.251 at 2019-01-18 15:30:55 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:56 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:56 +0000
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:56 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 190.102.85.251 at 2019-01-18 15:30:56 +0000
+
+
+Started GET "/posts?post%5Btitle%5D=Daniel&post%5Bdescription%5D=Bieber" for 190.102.85.251 at 2019-01-18 15:31:11 +0000
+Processing by PostsController#index as HTML
+  Parameters: {"post"=>{"title"=>"Daniel", "description"=>"Bieber"}}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
