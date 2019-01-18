@@ -1,3 +1,3 @@
-# class Post < ActiveRecord::Base
-#
-# end
+class Post < ActiveRecord::Base
+
+end
