@@ -1339,3 +1339,10 @@ Processing by PostsController#create as HTML
   [1m[35m (90.4ms)[0m  commit transaction
 Redirected to http://178.128.14.28:45581/posts
 Completed 302 Found in 96ms (ActiveRecord: 90.7ms)
+
+
+Started GET "/posts" for 190.102.85.251 at 2019-01-18 15:50:58 +0000
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
